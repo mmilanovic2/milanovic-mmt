@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Matej Milanović</title>
+</head>
+<body>
+    
+    <div class="topnav">
+        <a href="https://davidmikulic44.github.io/mmt-cv/">POČETNA</a>
+        <a class="active" href="om.html">O MENI</a>
+        <a href="ou.html">OBRAZOVNI USPJESI</a>
+        <a href="kontakt.html">KONTAKT</a>
+    </div>
+
+    <br><br><br><br><br>
+
+    
+    <h2 class="title-om-main">MATEJ MILANOVIĆ</h2>
+        
+            <img id="myImg" src="profilna.jpg" alt="Matej Milanović">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+       
+        <div class="text-om">  
+          
+            
+            <h2 class="title-om">DATUM ROĐENJA</h2>
+            <p class="desc-ou">10. travanj 2000.</p>
+            
+            <h2 class="title-om">MJESTO ROĐENJA</h2>
+            <p class="desc-ou"><a class="link" href="https://www.vukovar.hr/">Vukovar</a></p>
+            
+            <h2 class="title-om">MJESTO STANOVANJA</h2>
+            <p class="desc-ou"><a class="link" href="https://opcina-erdut.hr/">Dalj</a></p>
+            
+            <h2 class="title-om">SPOL</h2>
+            <p class="desc-ou">Muško</p>
+            
+            <h2 class="title-om">OBRAZOVANJE</h2>
+            <p class="desc-ou"><a class="link" href="http://os-dalj.skole.hr/">Osnovna škola Dalj</a></p>
+            <p class="desc-ou"><a class="link" href="https://elpros.net/">Elektrotehnička i prometna škola Osijek</a></p>
+            <p class="desc-ou"><a class="link" href="https://www.ferit.unios.hr/">Fakultet elektrotehnike, računarstva i informacijskih tehnologija u Osijeku</a></p>
+            
+            <h2 class="title-om">RAČUNALNE VJEŠTINE</h2>
+            <p class="desc-ou">Programski jezici C, C++, Java, PHP</p>
+            <p class="desc-ou">Rad u HTML-u i CSS</p>
+            <p class="desc-ou">Web framework Django</p>
+
+            <h2 class="title-om">OSTALE VJEŠTINE</h2>
+            <p class="desc-ou">Adobe Photoshop</p>
+            <p class="desc-ou">Engleski jezik</p>
+            
+            
+            <h2 class="title-om">ZVUČNI ZAPIS</h2>
+            <audio controls>
+                <source src="zvuk.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+        </div>
+  
+   
+    
+    <script>
+    var modal = document.getElementById("myModal");
+
+
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+
+    var span = document.getElementsByClassName("close")[0];
+
+
+    span.onclick = function() { 
+    modal.style.display = "none";
+    }
+    </script>
+
+
+
+    <br><br><br><br><br>
+    
+    <footer class="footer">
+        <p>Web stranica izrađena za vrijeme pohađanja <a class="footer-link" href="https://www.ferit.unios.hr/">Elektrotehničkog fakulteta u Osijeku</a> u sklopu kolegija <a class="footer-link" href="https://moodle.srce.hr/2023-2024/course/view.php?id=163509">Multimedijska tehnika</a></p>
+    </footer>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Matej Milanović</title>
+</head>
+<body>
+    
+    <div class="topnav">
+        <a href="https://davidmikulic44.github.io/mmt-cv/">POČETNA</a>
+        <a href="om.html">O MENI</a>
+        <a class="active" href="ou.html">OBRAZOVNI USPJESI</a>
+        <a href="kontakt.html">KONTAKT</a>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div class="ou-align">
+    <div class="row">
+        <div class="column">
+            <img id="myImg" class="ou-img" src="osdalj.bmp" alt="OSNOVNA ŠKOLA DALJ">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            
+        </div>
+        <div class="column">  
+          <h2 class="title-ou">OSNOVNA ŠKOLA DALJ</h2>
+          
+            <p class="desc-ou">Županijsko natjecanje iz matematike - 5. razred</p>
+            <p class="desc-ou">Natjecanje iz fizike - 8. razred</p>
+            <p class="desc-ou">Natjecanje iz povijesti - 8. razred</p>
+        
+        </div>
+    </div>
+    </div>
+    
+    <br><br><br><br><br>
+    
+    <div class="ou-align">
+    <div class="row">
+        <div class="column">  
+          <h2 class="title-ou">ELEKTROTEHNIČKA I PROMETNA ŠKOLA OSIJEK</h2> 
+            <p class="desc-ou">Natjecanje iz matematike - 1. razred</p>
+            <p class="desc-ou">Sudjelovanje u projektu Phys-Me</p>
+            <p class="desc-ou">Izrada web stranice ugostiteljskog objekta</p>
+        </div>
+        <div class="column">
+            <img id="myImg2" class="ou-img" src="elpros.gif" alt="ELEKTROTEHNIČKA I PROMETNA ŠKOLA OSIJEK">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <br><br><br><br><br>
+
+     <div class="ou-align">
+    <div class="row">
+          <div class="column">
+            <video class="ou-img" controls>
+                <source src="ferit.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="column">  
+          <h2 class="title-ou">FAKULTET ELEKTROTEHNIKE, RAČUNARSTVA I INFORMACIJSKIH TEHNOLOGIJA U OSIJEKU</h2> 
+            <p class="desc-ou">Izrada web shopa za prodaju bicikala</p>
+            <p class="desc-ou">Izrada portala za e-Učenje</p>
+            <p class="desc-ou">Izrada aplikacije za praćenje rezultata Formule 1</p>
+        </div>
+    </div>
+    </div>
+
+    <br><br><br><br><br>
+
+        <script>
+    var modal = document.getElementById("myModal");
+
+
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+
+    var span = document.getElementsByClassName("close")[0];
+
+
+    span.onclick = function() { 
+    modal.style.display = "none";
+    }
+    var modal = document.getElementById("myModal");
+
+
+    var img = document.getElementById("myImg2");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+
+    var span = document.getElementsByClassName("close")[0];
+
+
+    span.onclick = function() { 
+    modal.style.display = "none";
+    }
+    </script>
+    
+    <footer class="footer">
+        <p>Web stranica izrađena za vrijeme pohađanja <a class="footer-link" href="https://www.ferit.unios.hr/">Elektrotehničkog fakulteta u Osijeku</a> u sklopu kolegija <a class="footer-link" href="https://moodle.srce.hr/2023-2024/course/view.php?id=163509">Multimedijska tehnika</a></p>
+    </footer>
+    
+    
+    
+</body>
+</html>
